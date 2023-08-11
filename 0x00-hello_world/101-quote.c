@@ -2,7 +2,7 @@
 /**
  * main- entry
  * Description: write function
- * Return: 0
+ * Return: 1
 */
 int main(void)
 {
