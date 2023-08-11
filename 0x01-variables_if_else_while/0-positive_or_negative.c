@@ -5,8 +5,8 @@
 /* betty style doc for function main goes there */
 /**
  * main- entry point
- * Description: compare random number
- * Return : always  0 success
+ * Description: 'assign random number to n and  compare random number'
+ * Return: always  0 success
 */
 int main(void)
 {
