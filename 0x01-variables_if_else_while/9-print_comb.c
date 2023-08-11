@@ -14,6 +14,7 @@ int main(void)
 		if (l != 9)
 		{
 			putchar(44);
+			putchar(32);
 		}
 		l++;
 	}
