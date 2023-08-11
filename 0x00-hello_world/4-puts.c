@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
  * main -  entry point
- * Description: print put function
- * Retur:  0
+ * Description: A C program that prints with  put function
+ * Retur: Always 0 (Success)
 */
 
 int main(void)
