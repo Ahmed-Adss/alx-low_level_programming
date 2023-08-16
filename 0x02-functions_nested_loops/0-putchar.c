@@ -1,11 +1,9 @@
 #include "main.h"
 
 /**
- * main - entry point
- *
- * Description : prints _putchar followed by new line
- *
- * Return : Always 0 (Success) 1 (Error)
+ * main- entry point
+ * Description: 'Prints _putchar from prototype followed by new line'
+ * Return: always 0 success
  */
 
 
