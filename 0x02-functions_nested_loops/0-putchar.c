@@ -5,7 +5,7 @@
  *
  * Description : prints _putchar followed by new line
  *
- * Return : Always 0 (Success)
+ * Return : Always 0 (Success) 1 (Error)
  */
 
 
