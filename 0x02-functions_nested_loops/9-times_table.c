@@ -16,7 +16,7 @@ for (i = 0 ; i <= 9 ; i++)
 for (n = 0 ; n <= 9 ; n++)
 {
 result = i * n;
-_putchar (result);
+_putchar (result + '0');
 }
 _putchar ('\n');
 }
