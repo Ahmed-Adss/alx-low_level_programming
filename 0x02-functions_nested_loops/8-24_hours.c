@@ -18,11 +18,11 @@ if ((hr1 <= 1 && hr2 <= 9) || (hr1 <= 2 && hr2 <= 3))
 for (min1 = 0; min1 <= 6; min1++)
 {
 for (min2 = 0; min2 <= 9; min2++)
-_putchar('0' + hr1);
-_putchar('0' + hr2);
+_putchar(hr1);
+_putchar(hr2);
 _putchar(58);
-_putchar('0' + min1);
-_putchar('0' + min2);
+_putchar(min1);
+_putchar(min2);
 _putchar('\n');
 }
 }
