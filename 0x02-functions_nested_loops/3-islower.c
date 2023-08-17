@@ -3,6 +3,7 @@
 /**
 *_islower- entry point
 *Description: 'take parameter "c" and checks for lowercase character'
+*@c: the parameter to be checked
 *Return: always 0 success
 */
 
