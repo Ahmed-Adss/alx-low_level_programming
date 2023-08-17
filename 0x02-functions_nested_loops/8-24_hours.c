@@ -8,7 +8,7 @@
 
 void jack_bauer(void)
 {
-int min, hr;
+int min1, min2, hr1, hr2;
 for (hr1 = 0;  hr <= 2; hr++)
 {
 _putchar('0' + hr1);
