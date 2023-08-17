@@ -15,6 +15,7 @@ if (f < 0)
 {
 f = -f;
 }
+_putchar('f');
 return (f);
 }
 
