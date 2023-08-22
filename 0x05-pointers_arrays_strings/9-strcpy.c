@@ -1,8 +1,9 @@
 #include"main.h"
 
 /**
-*reset_to_98 - updates the value it points to to 98
-*@n: variable changed to 98
+*_strcpy - copies the string pointed to by src, including the terminating null byte
+*@dest: destination
+*@src: source
 *Return: void
 */
 
