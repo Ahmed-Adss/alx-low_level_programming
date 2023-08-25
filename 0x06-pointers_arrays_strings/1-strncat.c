@@ -24,6 +24,13 @@ char *_strncat(char *dest, char *src, int n)
 			dest[count1 + s] = src[s];
 		}
 	}
+	else
+	{
+		for (s = 0; s <= count2 - 1; s++)
+		{
+			dest[count1 + s] = src[s];
+		}
+	}
 	return (dest);
 
 
