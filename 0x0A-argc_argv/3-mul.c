@@ -17,7 +17,6 @@ int main(int argc, char **argv)
 		result1 = atoi(argv[1]);
 		result2 = atoi(argv[2]);
 		printf("%d\n", result1 * result2);
-		return (0);
 	} else
 	{
 		printf("%s\n", "ERROR");
