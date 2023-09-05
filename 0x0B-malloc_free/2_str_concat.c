@@ -1,52 +1,44 @@
-#include "main.h"
+#include "holberton.h"
 #include <stdlib.h>
+
 /**
- * str_concat - a function that concatenates two strings
- * @s1: an input pointer of the first string
- * @s2: an input pointer of the second string
- * Return: a pointer to concatenated strings or NULL if it str is NULL.
+ * string_nconcat - Concatenates two strings using at
+ *                  most an inputted number of bytes.
+ * @s1: The first string.
+ * @s2: The second string.
+ * @n: The maximum number of bytes of s2 to concatenate to s1.
+ *
+ * Return: If the function fails - NULL.
+ *         Otherwise - a pointer to the concatenated space in memory.
  */
-
-char *str_concat(char *s1, char *s2)
+char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *new_str, *starts1, *starts2;
-	int i = 0, lens1 = 0, lens2 = 0;
+	char *concat;
+	unsigned int len = n, index;
 
-	starts1 = s1;
-	starts2 = s2;
 	if (s1 == NULL)
 		s1 = "";
-	while (*s1)
-	{
-		lens1++;
-		s1++;
-	}
-	s1 = starts1;
+
 	if (s2 == NULL)
 		s2 = "";
-	while (*s2)
-	{
-		lens2++;
-		s2++;
-	}
-	s2 = starts2;
-	new_str = malloc(sizeof(char) * (lens1 + lens2 + 1));
-	starts1 = new_str;
-	if (new_str == NULL)
+
+	for (index = 0; s1[index]; index++)
+		len++;
+
+	concat = malloc(sizeof(char) * (len + 1));
+
+	if (concat == NULL)
 		return (NULL);
-	for (; i < (lens1 + lens2); i++)
-	{
-		if (i < lens1)
-		{
-			new_str[i] = *s1;
-			s1++;
-		}
-		else
-		{
-			new_str[i] = *s2;
-			s2++;
-		}
-	}
-	new_str[i] = '\0';
-	return (starts1);
+
+	len = 0;
+
+	for (index = 0; s1[index]; index++)
+		concat[len++] = s1[index];
+
+	for (index = 0; s2[index] && index < n; index++)
+		concat[len++] = s2[index];
+
+	concat[len] = '\0';
+
+	return (concat);
 }
