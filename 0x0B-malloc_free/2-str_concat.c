@@ -22,11 +22,11 @@ char *str_concat(char *s1, char *s2)
 		n2++;
 	}
 	new = (char *)malloc((n1 + n2 + 1) * sizeof(char));
-	for (i = 0; i < n1; i++)
+	for (i = 0; i < n1 + 1; i++)
 	{
 		new[i] = s1[i];
 	}
-	for (i = 0; i < (n1 + n2); i++)
+	for (i = 0; i < (n1 + n2 + 1); i++)
 	{
 		new[n1 + i] = s2[i];
 	}
