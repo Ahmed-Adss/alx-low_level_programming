@@ -11,29 +11,13 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	int i = 0;
-	void *new = (void *)malloc(nmemb * size);
+	int *new = (int *)malloc((nmemb * size) + 1);
 
-	for (i = 0; i < (nmemb * size); i++)
+	for (i = 0; i < ((nmemb * size) - 1); i++)
 	{
 		new[i] = 0;
 	}
-
+	new[i + 1] = '\0'
 	return (new);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
