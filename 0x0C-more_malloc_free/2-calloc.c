@@ -9,3 +9,25 @@
 */
 
 void *_calloc(unsigned int nmemb, unsigned int size)
+{
+	void *new = (void *)malloc(nmemb * size);
+
+	return (new);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
