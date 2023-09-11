@@ -1,5 +1,5 @@
-#ifndef  STRUCT_DOG
-#define STRUCT_DOG
+#ifndef  DOG_H
+#define DOG_H
 /**
 *struct dog- define a new type of var
 *@name: struct name
