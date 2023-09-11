@@ -1,5 +1,5 @@
-#ifndef dog
-#define dog
+#ifndef  STRUCT_DOG
+#define STRUCT_DOG
 /**
 *struct dog- define a new type of var
 *@name: struct name
@@ -13,7 +13,7 @@ struct dog
 	char *name;
 	float age;
 	char *owner;
-};
+}
 
 
 #endif
