@@ -1,30 +1,30 @@
 #include "function_pointers.h"
 
+
 /**
-  * int_index - ...
-  * @array: ...
-  * @size: ...
-  * @cmp: ...
-  *
-  * Return: ...
-  */
+*int_index- a function that prints a name
+*@array: input array
+*@size: size of array
+*@cmp: pointer to a function
+*Return: 0 always success
+*/
+
+
 int int_index(int *array, int size, int (*cmp)(int))
 {
 	int i = 0;
 
-	if (size > 0)
+	if (array && size && cmp)
 	{
-		if (array != NULL && cmp != NULL)
+		for (i = 0; i < size; i++)
 		{
-			while (i < size)
+			if (cmp(array[i]))
 			{
-				if (cmp(array[i]))
-					return (i);
-
-				i++;
+				break;
 			}
 		}
 	}
-
-	return (-1);
+	if (i == 20 || size <= 0)
+		i = -1;
+	return (i);
 }
