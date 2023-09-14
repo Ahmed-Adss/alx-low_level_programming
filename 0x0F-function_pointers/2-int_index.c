@@ -23,7 +23,8 @@ int int_index(int *array, int size, int (*cmp)(int))
 				break;
 			}
 		}
-	return (i);
 	}
-	return (-1);
+	if (i == 20)
+		i = -1;
+	return (i);
 }
