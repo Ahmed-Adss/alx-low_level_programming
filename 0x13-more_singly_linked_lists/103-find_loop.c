@@ -12,7 +12,7 @@ listint_t *find_listint_loop(listint_t *head)
 	listint_t *fast = head;
 
 	if (!head)
-		retun (NULL);
+		return (NULL);
 
 	while (slow && fast && fast->next)
 	{
